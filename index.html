@@ -2,40 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Todo List</title>
   </head>
   <body>
     <div class="container">
-      <h1>Todo List</h1>
-      <form action="">
-        <input type="text" name="" id="" placeholder="Add Todo..." />
-        <input type="date" name="" id="" placeholder="" />
-        <button type="submit">+</button>
-      </form>
+      <h1>To-Do List</h1>
+      <div id="message"></div>
+      <div class="form">
+        <input type="text" id="todoInput" placeholder="Enter task..." />
+        <input type="date" id="dateInput" />
+        <button id="addBtn"><span class="material-icons">add</span></button>
+      </div>
       <div class="controls">
-        <select name="" id="filter">
-          <option value="all" active>Filter</option>
-          <option value="all">All</option>
-          <option value="pending">Pending</option>
-          <option value="completed">Completed</option>
-        </select>
-        <button id="clear-all">Clear All</button>
+        <div class="custom">
+          <select id="filter">
+            <option value="all" selected disabled>Filter</option>
+            <option value="all">All</option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+          </select>
+          <span class="material-icons">filter_alt</span>
+        </div>
+        <button id="clearAllBtn">
+          <span class="material-icons">delete_sweep</span>Delete All
+        </button>
       </div>
       <table>
         <thead>
           <tr>
-            <th>Todo</th>
+            <th>Task</th>
             <th>Date</th>
             <th>Status</th>
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody id="todo-list">
-          <!-- Todo items will be dynamically added here -->
+        <tbody id="todoList">
           <tr>
-            <td colspan="4">No Data Found</td>
+            <td colspan="4" style="text-align: center">No Task Found...</td>
           </tr>
         </tbody>
       </table>
