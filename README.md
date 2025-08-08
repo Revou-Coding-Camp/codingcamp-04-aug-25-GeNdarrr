@@ -50,7 +50,7 @@ This mini project resulting from the RevoU Coding Camp session is an interactive
 
 ## 🌐 Demo
 
-🔗 [Demo Github Pages](https://revou-coding-camp.github.io/codingcamp-04-aug-25-GeNdarrr/)
+🔗 [Todo List](https://revou-coding-camp.github.io/codingcamp-04-aug-25-GeNdarrr/)
 
 ---
 
