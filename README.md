@@ -44,13 +44,13 @@ This mini project resulting from the RevoU Coding Camp session is an interactive
 ---
 ## 📸 Preview
 
--
+<img width="1366" height="768" alt="Preview Application" src="PreviewTodoList.png" />
 
 ---
 
 ## 🌐 Demo
 
--
+🔗 [Demo Github Pages](https://revou-coding-camp.github.io/codingcamp-04-aug-25-GeNdarrr/)
 
 ---
 
