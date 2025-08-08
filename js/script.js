@@ -136,8 +136,10 @@ addBtn.onclick = () => {
   saveAndRender();
 };
 
+// Filter Tasks
 filter.onchange = renderTasks;
 
+// Clear All Tasks
 clearAllBtn.onclick = () => {
   const confirmClear = confirm("Are you sure you want to delete all tasks?");
   if (confirmClear) {

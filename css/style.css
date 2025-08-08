@@ -27,6 +27,7 @@ h1 {
 
 .form {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 15px;
 }
@@ -54,12 +55,10 @@ button {
 
 .form button {
     background-color: #6a65fe;
-    /* biru */
 }
 
 #clearAllBtn {
     background-color: #f44336;
-    /* merah */
 }
 
 .actions button {
@@ -67,29 +66,22 @@ button {
 }
 
 .actions button:nth-child(1) {
-    /* toggle status */
     background-color: #ffeb3b;
-    /* kuning untuk pending */
     color: black;
 }
 
 .actions button:nth-child(1).completed {
     background-color: #4caf50;
-    /* hijau untuk completed */
     color: white;
 }
 
 .actions button:nth-child(2) {
-    /* edit */
     background-color: #ffc107;
-    /* kuning */
     color: black;
 }
 
 .actions button:nth-child(3) {
-    /* delete */
     background-color: #f44336;
-    /* merah */
 }
 
 button:hover {
@@ -108,13 +100,11 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* Custom Select */
 .controls .custom {
     position: relative;
     display: inline-block;
 }
 
-/* Hilangkan panah bawaan browser */
 select {
     background-color: #333;
     color: white;
@@ -122,21 +112,17 @@ select {
     border: 1px solid #555;
     border-radius: 4px;
     appearance: none;
-    /* Untuk Chrome, Safari, Edge */
     -webkit-appearance: none;
     -moz-appearance: none;
     padding-right: 30px;
-    /* beri ruang untuk icon */
 }
 
-/* Posisi icon Google */
 .controls .custom .material-icons {
     position: absolute;
     right: 8px;
     top: 45%;
     transform: translateY(-50%);
     pointer-events: none;
-    /* supaya klik tetap ke select */
     font-size: 20px;
     color: #555;
 }
@@ -158,19 +144,18 @@ td {
 }
 
 .actions {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
 }
 
-/* Status label */
 .status-pending {
-    display: inline-flexbox;
     color: #ffeb3b;
     font-weight: bold;
 }
 
 .status-completed {
-    display: inline-flexbox;
     color: #4caf50;
     font-weight: bold;
 }
